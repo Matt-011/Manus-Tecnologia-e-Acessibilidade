@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Manus - Home</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/Logo2.png">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Palavras</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Frases</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Temas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Números</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O que é o projeto?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Ajuda" href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass me-3"></i>
+        <form class="d-flex" action="pages/resultado.html" method="GET">
+            <input class="form-control me-2" type="text" name="q"
+                placeholder="Pesquise uma palavra ou frase em Libras..." required>
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+
+    </div>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1>
+                        Aprenda Libras
+                        <span>de forma prática</span>
+                        e divertida!
+                    </h1>
+
+                    <p>
+                        Um projeto escolar para ensinar Libras de um jeito
+                        simples,
+                        moderno e acessível para todos.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="hero-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+
+    <section>
+        <div class="container">
+
+            <h2 class="section-title">
+                O que você pode aprender?
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-custom">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+
+                        <h4>Palavras</h4>
+
+                        <p>
+                            Aprenda palavras do dia a dia em Libras.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-custom">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h4>Frases</h4>
+
+                        <p>
+                            Descubra frases úteis para conversar.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-custom">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <h4>Temas</h4>
+
+                        <p>
+                            Explore conteúdos organizados por temas.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-custom">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+
+                        <h4>Números</h4>
+
+                        <p>
+                            Aprenda números e contagem em Libras.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+
+    <section class="steps">
+        <div class="container">
+
+            <h2 class="section-title">
+                Como funciona?
+            </h2>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="step-box">
+
+                        <div class="step-number">1</div>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <h5>Pesquise</h5>
+
+                        <p>
+                            Busque palavras ou frases.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="step-box">
+
+                        <div class="step-number">2</div>
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <h5>Assista</h5>
+
+                        <p>
+                            Veja o sinal sendo feito.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="step-box">
+
+                        <div class="step-number">3</div>
+
+                        <i class="fa-solid fa-hands"></i>
+
+                        <h5>Pratique</h5>
+
+                        <p>
+                            Repita e aprenda no seu ritmo.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="step-box">
+
+                        <div class="step-number">4</div>
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                        <h5>Evolua</h5>
+
+                        <p>
+                            Ganhe experiência e progresso.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FRASES -->
+
+    <section class="phrases">
+        <div class="container">
+
+            <h2 class="section-title">
+                Frases populares !!
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="phrase-card">
+
+                        <h5>Bom dia</h5>
+
+                        <p>
+                            Aprenda como sinalizar "Bom dia" em Libras.
+                        </p>
+
+                        <button>Ver sinal</button>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="phrase-card">
+
+                        <h5>Obrigado</h5>
+
+                        <p>
+                            Descubra como agradecer em Libras.
+                        </p>
+
+                        <button>Ver sinal</button>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="phrase-card">
+
+                        <h5>Como você está?</h5>
+
+                        <p>
+                            Aprenda frases usadas em conversas.
+                        </p>
+
+                        <button>Ver sinal</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <h3>ProjetoManus™</h3>
+
+                    <p>
+                        Projeto escolar criado para facilitar o aprendizado
+                        de Libras para todos.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 text-lg-end social">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+        document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio tradicional do formulário
+            const termo = document.getElementById('campoPesquisa').value.trim();
+            if (termo) {
+                // Redireciona com o termo como parâmetro na URL
+                window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
