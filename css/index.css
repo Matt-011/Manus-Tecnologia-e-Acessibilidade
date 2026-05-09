@@ -1,3 +1,5 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,34 +12,35 @@ body {
     color: #1d2b36;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* NAVBAR */
 
 .navbar {
-    background: rgb(255, 255, 255);
+    background: #fff;
     padding: 18px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
-.navbar-brand {
-    font-size: 32px;
-    font-weight: 700;
-    color: #16a085 !important;
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar-brand,
-img {
-    width: 40vh;
-    height: auto;
-    top: 40vh;
+.navbar-brand img {
+    width: 160px;
 }
 
 .nav-item {
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .nav-item:hover {
-    color: red;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .nav-link {
@@ -63,7 +66,7 @@ img {
 }
 
 .hero span {
-    color: #23019c;
+    color: #f7bb3b;
 }
 
 .hero p {
@@ -73,21 +76,6 @@ img {
     max-width: 500px;
 }
 
-.btn-main {
-    background: #16a085;
-    color: white;
-    border: none;
-    padding: 16px 30px;
-    border-radius: 16px;
-    font-weight: 600;
-    margin-top: 25px;
-    transition: 0.3s;
-}
-
-.btn-main:hover {
-    background: #13856d;
-}
-
 .hero-image {
     background: #dff5ef;
     border-radius: 40px;
@@ -95,41 +83,48 @@ img {
     text-align: center;
 }
 
-.hero-image img {
+.hero-image video {
     width: 100%;
     max-width: 420px;
+    transition: 0.4s;
 }
 
-/* PESQUISA */
+.hero-image:hover video {
+    transform: scale(1.1);
+}
+
+/* SEARCH */
 
 .search-box {
-    background: #ffcea2;
+    background: #46fc46;
     padding: 18px 24px;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     display: flex;
+    align-items: center;
     margin: auto;
     width: 80%;
     margin-top: 5vh;
-
 }
 
-.search-box i{
-    margin-top: 1.5vh;
+.search-box i {
+    margin-right: 10px;
 }
 
-.search-box form{
+.search-box form {
     width: 100%;
+    display: flex;
+    gap: 10px;
 }
 
 .search-box input {
     border: none;
     width: 100%;
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-/* CATEGORIAS */
+/* TITULOS */
 
 .section-title {
     text-align: center;
@@ -138,6 +133,8 @@ img {
     font-size: 42px;
     font-weight: 700;
 }
+
+/* CARDS */
 
 .card-custom {
     background: white;
@@ -153,10 +150,14 @@ img {
     transform: translateY(-8px);
 }
 
-.card-icon {
+/* ICONES */
+
+.card-icon,
+.card-icon1,
+.card-icon2,
+.card-icon3 {
     width: 80px;
     height: 80px;
-    background: #dff5ef;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -164,20 +165,14 @@ img {
     margin: auto;
     margin-bottom: 20px;
     font-size: 32px;
-    color: #16a085;
 }
 
-.card-custom h4 {
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+.card-icon { background: #c3ecc2; color: #15b906; }
+.card-icon1 { background: #f8a4a4; color: #fc1a1a; }
+.card-icon2 { background: #b4c9f0; color: #0c81ee; }
+.card-icon3 { background: #f1f1d5; color: #b4a801; }
 
-.card-custom p {
-    color: #68737d;
-    font-size: 15px;
-}
-
-/* COMO FUNCIONA */
+/* STEPS */
 
 .steps {
     margin-top: 80px;
@@ -191,7 +186,7 @@ img {
 .step-number {
     width: 50px;
     height: 50px;
-    background: #16a085;
+    background: #9AE8D5;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -202,9 +197,69 @@ img {
     font-weight: 700;
 }
 
-.step-box i {
+.step-number1 {
+    width: 50px;
+    height: 50px;
+    background: #F1AAB8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.step-number2 {
+    width: 50px;
+    height: 50px;
+    background: #CCA89F;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.step-number3 {
+    width: 50px;
+    height: 50px;
+    background: #DEB4EC;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.step-box .i1{
     font-size: 45px;
-    color: #16a085;
+    color: #9AE8D5;
+    margin-bottom: 20px;
+}
+
+.step-box .i2{
+    font-size: 45px;
+    color: #F1AAB8;
+    margin-bottom: 20px;
+}
+
+.step-box .i3{
+    font-size: 45px;
+    color: #CCA89F;
+    margin-bottom: 20px;
+}
+
+.step-box .i4{
+    font-size: 45px;
+    color: #DEB4EC;
     margin-bottom: 20px;
 }
 
@@ -215,7 +270,7 @@ img {
 }
 
 .phrase-card {
-    background: white;
+    background: rgb(222, 225, 240);
     border-radius: 20px;
     padding: 25px;
     margin-bottom: 20px;
@@ -229,7 +284,7 @@ img {
 .phrase-card button {
     margin-top: 15px;
     border: none;
-    background: #16a085;
+    background: #8da5f3;
     color: white;
     padding: 10px 18px;
     border-radius: 12px;
@@ -239,13 +294,8 @@ img {
 
 footer {
     margin-top: 100px;
-    background: #16a085;
-    color: white;
+    background: #ffffff;
     padding: 50px 0;
-}
-
-footer h3 {
-    font-weight: 700;
 }
 
 footer p {
@@ -257,19 +307,118 @@ footer p {
     margin-right: 15px;
     margin-top: 15px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-@media(max-width:991px) {
+.social i:hover {
+    color: #16a085;
+    transform: scale(1.2);
+}
+
+/* ========================= */
+/* 📱 CELULAR */
+/* ========================= */
+
+@media (max-width: 576px) {
+
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .search-box {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .search-box form {
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+/* ========================= */
+/* 📲 TABLET */
+/* ========================= */
+
+@media (min-width: 577px) and (max-width: 991px) {
 
     .hero {
         text-align: center;
     }
 
     .hero h1 {
-        font-size: 46px;
+        font-size: 42px;
     }
 
     .hero-image {
         margin-top: 40px;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+}
+
+/* ========================= */
+/* 💻 DESKTOP */
+/* ========================= */
+
+@media (min-width: 992px) and (max-width: 1400px) {
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .search-box {
+        width: 70%;
+    }
+}
+
+/* ========================= */
+/* 📺 TV */
+/* ========================= */
+
+@media (min-width: 1401px) {
+
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 56px;
+    }
+
+    .search-box {
+        width: 60%;
+        padding: 25px;
+    }
+
+    .card-custom {
+        padding: 50px;
     }
 }
