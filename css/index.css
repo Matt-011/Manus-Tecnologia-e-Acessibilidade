@@ -10,6 +10,7 @@
 body {
     background: #f7faf9;
     color: #1d2b36;
+    text-align: center;
 }
 
 img {
@@ -325,9 +326,8 @@ footer p {
     transform: scale(1.2);
 }
 
-/* ========================= */
-/* 📱 CELULAR */
-/* ========================= */
+
+/* CELULAR */
 
 @media (max-width: 576px) {
 
@@ -380,9 +380,7 @@ footer p {
     }
 }
 
-/* ========================= */
-/* 📲 TABLET */
-/* ========================= */
+/* TABLET */
 
 @media (min-width: 577px) and (max-width: 991px) {
 
@@ -403,9 +401,7 @@ footer p {
     }
 }
 
-/* ========================= */
-/* 💻 DESKTOP */
-/* ========================= */
+/*  DESKTOP */
 
 @media (min-width: 992px) and (max-width: 1400px) {
 
@@ -418,9 +414,7 @@ footer p {
     }
 }
 
-/* ========================= */
 /* 📺 TV */
-/* ========================= */
 
 @media (min-width: 1401px) {
 
